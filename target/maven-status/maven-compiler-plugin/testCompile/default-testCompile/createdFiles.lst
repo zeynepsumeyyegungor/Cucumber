@@ -1,0 +1,4 @@
+pages\TrendyolMorhipoPage.class
+stepDefinitions\HepsiBuradaDefinition.class
+runners\Runner.class
+stepDefinitions\TrendyolMorhipoMakasStepDef.class
