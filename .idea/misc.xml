@@ -10,14 +10,6 @@
         </MavenCompilerTask>
       </set>
     </option>
-    <option name="afterCompileTasks">
-      <set>
-        <MavenCompilerTask>
-          <option name="goal" value="install" />
-          <option name="projectPath" value="$PROJECT_DIR$/pom.xml" />
-        </MavenCompilerTask>
-      </set>
-    </option>
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">

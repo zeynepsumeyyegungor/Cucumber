@@ -67,9 +67,9 @@ public class AmazonStepDefinition {
     }
 
     @And("sonuclarin {string} icerdigini test eder")
-    public void sonuclarinIcerdiginiTestEder(String arg0) {
+    public void sonuclarinIcerdiginiTestEder(String istenenKelime) {
         String actualAramaSonucuStr = amazonPage.aramaSonucElementi.getText();
-        Assert.assertTrue(actualAramaSonucuStr.contains("nutella"));
+        Assert.assertTrue(actualAramaSonucuStr.contains(istenenKelime));
     }
 
     @Given("kullanici {string} sayfasina gider")
@@ -83,6 +83,7 @@ public class AmazonStepDefinition {
         Assert.assertTrue(actualUrl.contains(arananKelime));
     }
 
+
     @Then("kullanici {int} saniye bekeler")
     public void kullaniciSnBekeler(int istenenSure) {
         try {
@@ -91,4 +92,5 @@ public class AmazonStepDefinition {
             throw new RuntimeException(e);
         }
     }
+
 }
