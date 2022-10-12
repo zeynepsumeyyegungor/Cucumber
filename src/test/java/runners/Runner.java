@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 
         features = "src/test/resources/features",
         glue = "stepDefinitions",
-        tags = "@PracticeTC07", // İki tagı aynı anda çalıştırmak istersek "@gp1 or @gp2"
+        tags = "@PracticeAmazon", // İki tagı aynı anda çalıştırmak istersek "@gp1 or @gp2"
         dryRun = false
 )
 public class Runner {
