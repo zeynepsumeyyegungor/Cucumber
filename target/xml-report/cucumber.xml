@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.117">
+    <testcase classname="US004 Parametre Kullanimi" name="TC01 Parametre Kullanimi" time="9.903">
+        <system-out>
+            <![CDATA[Given kullanici "https://trendyol.com" sayfasinda...........................passed
+Then kullanici 3 saniye bekeler.............................................passed
+When url'in "trendyol" icerdigini test edelim...............................passed
+And sayfayi kapatir.........................................................passed
+]]>
+        </system-out>
+    </testcase>
+</testsuite>

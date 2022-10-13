@@ -1,6 +1,9 @@
+stepDefinitions\PracticeTestPageStepDefs.class
 utilities\ReusableMethods$1.class
+pages\GuruPage.class
 stepDefinitions\Practice_TC_07steps.class
 pages\PracticeAmazonPage.class
+pages\HerokuPages.class
 pages\BrcPage.class
 stepDefinitions\PracticeAmazonStepDef.class
 utilities\ReusableMethods.class
@@ -8,4 +11,8 @@ pages\TrendyolMorhipoPage.class
 pages\PracticeTC07Page.class
 runners\Runner.class
 stepDefinitions\BlueRentACarStepDefinition.class
+stepDefinitions\Hooks.class
+pages\PracticeTestPage.class
+stepDefinitions\HerokuStepDefinition.class
+stepDefinitions\GuruStepDefinition.class
 stepDefinitions\TrendyolMorhipoMakasStepDef.class
