@@ -1,12 +1,30 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="10.117">
-    <testcase classname="US004 Parametre Kullanimi" name="TC01 Parametre Kullanimi" time="9.903">
-        <system-out>
-            <![CDATA[Given kullanici "https://trendyol.com" sayfasinda...........................passed
-Then kullanici 3 saniye bekeler.............................................passed
-When url'in "trendyol" icerdigini test edelim...............................passed
-And sayfayi kapatir.........................................................passed
+<testsuite errors="0" failures="1" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="1" time="19.832">
+    <testcase classname="US014 Class Work" name="Kullanici ve Url Testi" time="19.582">
+        <failure message="null value in entry: url=null" type="java.lang.NullPointerException">
+            <![CDATA[Given kullanici "http://webdriveruniversity.com/" anasayfasinda.............failed
+Then kullanici Login Portala kadar asagi iner...............................skipped
+And kullanici Login Portala tiklar..........................................skipped
+And kullanici diger windowa gecer...........................................skipped
+And kullanici "username" kutusuna bilgileri girer...........................skipped
+And kullanici "password" bolumune bilgileri girer...........................skipped
+And kullanici login butonuna basar..........................................skipped
+And kullanici Popup'ta cikan yazinin validation failed oldugunu test eder...skipped
+And kullanici Ok diyerek Popup'i kapatir....................................skipped
+And kullanici ilk sayfaya geri doner........................................skipped
+And kullanici ilk sayfaya donuldugunu test eder.............................skipped
+
+StackTrace:
+java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:33)
+	at com.google.common.collect.SingletonImmutableBiMap.<init>(SingletonImmutableBiMap.java:43)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:81)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:128)
+	at org.openqa.selenium.remote.DriverCommand.GET(DriverCommand.java:76)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:330)
+	at stepDefinitions.GuruStepDefinition.kullaniciAnasayfasinda(GuruStepDefinition.java:17)
+	at ✽.kullanici "http://webdriveruniversity.com/" anasayfasinda(file:///C:/Users/zeynepsümeyye/IdeaProjects/batch81Cucumber/src/test/resources/features/US014_ClassWork2.feature:4)
 ]]>
-        </system-out>
+        </failure>
     </testcase>
 </testsuite>
