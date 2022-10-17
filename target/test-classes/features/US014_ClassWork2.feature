@@ -1,4 +1,4 @@
-@abc
+
 Feature: US014 Class Work
   Scenario: Kullanici ve Url Testi
     Given kullanici "http://webdriveruniversity.com/" anasayfasinda
