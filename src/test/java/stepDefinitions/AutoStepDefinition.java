@@ -2,6 +2,7 @@ package stepDefinitions;
 import com.github.javafaker.Faker;
 import io.cucumber.java.en.And;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import pages.AutoPage;
@@ -35,13 +36,15 @@ public class AutoStepDefinition {
                 sendKeys(faker.address().city()).sendKeys(Keys.TAB).sendKeys("kansa").sendKeys(Keys.TAB).
                 sendKeys("Alaska").sendKeys(Keys.TAB).sendKeys("07100").sendKeys(Keys.TAB).
                 sendKeys("United States").sendKeys(Keys.TAB).sendKeys(Keys.TAB).sendKeys(Keys.TAB).
-                sendKeys(faker.phoneNumber().cellPhone()).sendKeys(Keys.TAB).sendKeys(Keys.TAB).
-                sendKeys(Keys.ENTER).perform();
+                sendKeys(faker.phoneNumber().cellPhone()).perform();
     }
     @And("kullanici Register butonuna basar")
     public void kullaniciRegisterButonunaBasar() {
+        action.sendKeys(Keys.TAB).sendKeys(Keys.TAB).
+                sendKeys(Keys.ENTER).perform();
     }
     @Then("kullanicinin hesap olusturuldugunu dogrulayin")
     public void kullanicininHesapOlusturuldugunuDogrulayin() {
+        Assert.assertTrue(auto.myAccountText.isDisplayed());
     }
 }
